@@ -1,0 +1,84 @@
+*{
+    margin-top: 0;
+}
+.padre{
+    display:grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns:1fr  1fr ;
+    grid-template-rows: .5fr 1fr 1fr .5fr;
+    grid-template-areas: "a1   a7"
+                         "a2   a7"
+                         "a3   a5"
+                         "a4   a6";
+
+}
+.miimagen{
+    width: 42%;
+    height: 95%;
+}
+.hijo{
+    text-align: justify;
+    border-top: 5px gray solid;
+    padding-top: 1%;
+}
+.seccion{
+    background-color: rgb(143, 213, 230);
+    display: block;
+    width: 98%;
+    height: 18%;
+    padding: 1%;
+}
+.nombre .seccion{
+    background-color: rgb(195, 143, 230);
+    font-size: 25px;
+}
+.tx{
+    margin-top:2%;
+}
+.nombre{
+    grid-area: a1;
+    margin-right: 10%;
+    background-color: rgb(195, 143, 230);
+    border-top: 5px white solid;
+    margin-bottom:1%;
+}
+.resumen{
+    grid-area: a2;
+    margin-right: 10%;
+}
+.formacion{
+    grid-area: a3;
+    margin-right: 10%;
+}
+.adicional{
+    grid-area: a4;
+    margin-right: 10%;
+}
+.contacto{
+    grid-area: a5;
+}
+.aptitudes{
+    grid-area: a6;
+}
+.imagen{
+    grid-area: a7;
+    border-top: 5px white solid;
+}
+@media screen and (max-width:576px) {
+    .padre{
+        display:grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns:1fr  1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "a1   a7"
+                             "a2   a5"
+                             "a3   a6"
+                             "a4   a6";
+    }
+    .miimagen{
+        width: 50%;
+        height: 95%;
+    }
+}
